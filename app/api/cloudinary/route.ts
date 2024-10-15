@@ -12,12 +12,6 @@ cloudinary.config({
     api_secret: process.env.CLOUDINARY_API_SECRET,
 })
 
-// Disable the default body parser
-export const config = {
-    api: {
-        bodyParser: false,
-    },
-}
 
 export const POST = async (req: Request, res: NextApiResponse) => {
 

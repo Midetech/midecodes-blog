@@ -23,13 +23,15 @@ const BlogHeaderImage: React.FC<BlogHeaderImageProps> = ({
 }) => {
   return (
     <div className="relative w-full h-[400px] mb-8">
-      <Image
-        src={imageUrl}
-        alt={title}
-        layout="fill"
-        objectFit="cover"
-        className="brightness-75"
-      />
+      {imageUrl && (
+        <Image
+          src={imageUrl}
+          alt={title}
+          layout="fill"
+          objectFit="cover"
+          className="brightness-75"
+        />
+      )}
       <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60" />
       <div className="absolute inset-0 flex flex-col justify-end p-4 lg:p-8">
         {category && (

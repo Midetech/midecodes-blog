@@ -114,7 +114,7 @@ Hello **world**!
 
   return (
     <div className="flex justify-center items-center h-screen ">
-      <Card className="w-[600px]">
+      <Card className="lg:w-[600px] w-full md:w-2/3">
         <CardHeader>
           <CardTitle>Create a New Post</CardTitle>
         </CardHeader>
@@ -133,23 +133,8 @@ Hello **world**!
               </div>
               <div className="flex flex-col space-y-1.5">
                 <Label htmlFor="content">Content</Label>
-                {/* 
-                <Editor
-                  value={content}
-                  onTextChange={(e: EditorTextChangeEvent) => {
-                    setContent(e.textValue as string);
-                  }}
-                  style={{ height: "320px" }}
-                /> */}
 
                 <MarkdownEditor markdown={content} setContent={setContent} />
-                {/* <MarkdownEditor
-                  id="content"
-                  placeholder="Write your post content here"
-                  value={content}
-                  onChange={handleContentChange}
-                  required
-                /> */}
               </div>
               <div className="flex flex-col space-y-1.5">
                 <Label htmlFor="tags">Tags</Label>

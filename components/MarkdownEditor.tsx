@@ -13,7 +13,6 @@ import {
   MDXEditor,
   MDXEditorMethods,
   Separator,
-  ShowSandpackInfo,
   codeBlockPlugin,
   codeMirrorPlugin,
   diffSourcePlugin,
@@ -42,7 +41,7 @@ interface EditorProps {
 const Editor: FC<EditorProps> = ({ markdown, editorRef, setContent }) => {
   return (
     <MDXEditor
-      className="border h-[350px] p-2 w-[550px] overflow-y-scroll overflow-x-hidden"
+      className="border h-[350px] p-2 lg:w-[550px] w-[344px] md:w-[400px] overflow-y-scroll overflow-x-hidden"
       onChange={(e) => {
         setContent(e);
       }}

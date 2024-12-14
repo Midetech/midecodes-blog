@@ -131,7 +131,16 @@ const page = () => {
 
   return (
     <div className="w-full min-h-screen flex items-center justify-center flex-col gap-4 p-4">
-      <h1>Some Notable Stuff here</h1>
+      <h1>
+        Some Notable Stuff here by{" "}
+        <a
+          className="underline hover:text-blue-600"
+          href="https://mide.codes"
+          target="_blank"
+        >
+          Midecodes
+        </a>
+      </h1>
       <div className="w-full flex justify-center items-center gap-4">
         <p className="text-red-600">{error}</p>
         <form

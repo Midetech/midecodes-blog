@@ -22,7 +22,7 @@ export const POST = async (req: Request) => {
             {
                 prompt: `The patient describes the following symptoms: ${`headache, feverish, tiredness`}. What could be the possible diagnosis?`,
                 max_tokens_to_sample: 300,
-                model: 'claude-3-5-sonnet-20240620',
+                model: 'claude-3-5-haiku-20241022',
             },
             {
                 headers: {
